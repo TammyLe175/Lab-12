@@ -16,7 +16,7 @@ class Account:
         :param amount: ammount money deposit in account
 
         """
-        amount = 0
+
         if amount > 0:
             self.__account_balance += amount
             return True
@@ -28,7 +28,7 @@ class Account:
         :param amount: the amount of money to withdraw in the account
         :return: an action of withdraw an amount of money
         """
-        if amount > 0 or amount <= self.__account_balance:
+        if amount > 0 and amount <= self.__account_balance:
             self.__account_balance -= amount
             return True
         else:
