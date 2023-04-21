@@ -27,7 +27,7 @@ class Account:
         :param amount: the amount of money to withdraw in the account
         :return: an action of withdraw an amount of money
         """
-        if amount <= self.__account_balance:
+        if amount > 0 or amount <= self.__account_balance:
             self.__account_balance -= amount
             return True
         else:
