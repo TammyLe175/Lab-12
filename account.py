@@ -10,7 +10,6 @@ class Account:
         self.__account_name = name
         self.__account_balance = balance
 
-
     def deposit(self, amount: float) -> bool:
         """
         function deposit a amount of money, cannot be less than or equal to 0
@@ -25,8 +24,6 @@ class Account:
 
     def withdraw(self, amount: float) -> bool:
         """
-
-
         :param amount: the amount of money to withdraw in the account
         :return: an action of withdraw an amount of money
         """
@@ -35,6 +32,7 @@ class Account:
             return True
         else:
             return False
+
     def get_balance(self):
         """
 
@@ -43,7 +41,6 @@ class Account:
         return self.__account_balance
     def get_name(self):
         """
-
         :return: the name of the account
         """
         return self.__account_name
